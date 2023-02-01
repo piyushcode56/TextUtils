@@ -1,0 +1,114 @@
+.navbar{
+  cursor: pointer;
+}
+.search-btn{
+  margin-left: 15rem;
+}
+.search-txt{
+  width: 35rem;
+}
+.TextBox{
+  width: 50rem;
+  margin-left: 30rem;
+  /* margin-top: 5rem; */
+  
+}
+.text-summary{
+  margin-left: 30rem;
+}
+.convert-buttons{
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  background-color: blue;
+  color: white;
+  border: none;
+  
+}
+.convert-buttons:hover{
+  background-color: black;
+  
+}
+.switch-btn{
+  margin-left: 20rem;
+}
+
+
+.developer-name{
+  margin-left: 70rem;
+  text-decoration: none;
+  color: black;
+
+}
+.developer-name:hover{
+  color: white;
+}
+
+.form{
+  justify-content: center;
+  text-align: center;
+  /* margin-left: 45rem; */
+  /* margin-top: 10rem; */
+  
+  
+  
+  
+}
+.contact-form{
+  background-image: url('https://cdn.wallpapersafari.com/19/37/movi5k.jpg');
+  width: 50rem;
+  margin-left: 30rem;
+  margin-top: 5rem;
+  box-shadow: 10px 10px 20px black;
+
+
+}
+
+.contact-form textarea{
+  /* box-shadow: 3px 3px 7px 7px black; */
+  box-shadow: 5px 5px 10px black;
+  width: 24.7rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+ 
+
+}
+.contact-form input{
+ 
+  width: 24.7rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 10px black;
+
+}
+
+.submit-btn button{
+  width: 7rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: cyan;
+  color: black;
+  border: none;
+  transition: 0.7s ease;
+ 
+}
+.contact-body{
+  
+  height: 100vh;
+  position: relative;
+}
+.submit-btn button:hover{
+  background-color: black;
+  color: white;
+
+  
+}
+.developer-info{
+  margin-left: 80rem;
+}
+.developer-info img{
+  width: 15rem;
+}
