@@ -55,22 +55,25 @@ export default function TextForm(props) {
     <div>
     <>
    <h2 className='text-center mt-3'>{props.heading}</h2>
-<div className="TextBox mb-3">
+
   {/* <label htmlFor="exampleFormControlTextarea1" className="form-label" >{props.textTitle}</label> */}
-  <textarea className="Text-area form-control text-white bg-dark" id="myText" value={text} onChange={onChange}rows="12" ></textarea>
-  <button className="convert-buttons mx-3 mt-2" onClick={convertUppercase}>Convert to uppercase</button>
-  <button className="convert-buttons mt-2 mx-2" onClick={convertLowercase}  >Convert to lowercase</button>
-  <button className="convert-buttons mt-2 mx-2" onClick={clearText}>Clear text</button>
-  <button className="convert-buttons mt-2 mx-2" onClick={removeSpaces}>Remove extra spaces</button>
-  <button className="convert-buttons mt-2 mx-2" onClick={copyText}>Copy text</button>
+  <textarea className="Text-area form-control container text-white bg-dark" id="myText"  value={text} onChange={onChange}rows="12" ></textarea>
+  <div className="container">
+  
+  <button disabled ={text.length===0} className="btn btn-success mx-1 my-1" onClick={convertUppercase}>Convert to uppercase</button>
+  <button disabled ={text.length===0} className="btn btn-success mx-1 my-1" onClick={convertLowercase}>Convert to lowercase</button>
+  <button disabled ={text.length===0} className="btn btn-success mx-1 my-1" onClick={clearText}>Clear text</button>
+  <button disabled ={text.length===0} className="btn btn-success mx-1 my-1" onClick={removeSpaces}>Remove extra spaces</button>
+  <button disabled ={text.length===0} className="btn btn-success mx-1 my-1" onClick={copyText}>Copy text</button>
+  </div>
 
 
-</div>
 
-<div className="text-summary">
+
+<div className="container">
     <h2>Your text summary</h2>
-    <p>{text.split(" ").length} words and {text.length} alphabets</p>
-    <p>{0.008 * text.split(" ").length} in this minute you can read your text </p>
+    <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} alphabets</p>
+    <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} in this minute you can read your text </p>
     <h2>Your text preview</h2>
     <p>{text.length>0?text:"Enter your text above to preview it here."}</p>
 </div>

@@ -24,8 +24,11 @@ function App(){
   // const [greenText, setGreenText] = useState("Enable green mode")
   
 
- 
 
+  
+
+ 
+  
 
   const showAlert = (message,type)=>{
     setAlert({
@@ -45,8 +48,6 @@ function App(){
       document.body.style.backgroundColor = "black";
       document.body.style.color = "white";
       showAlert("Dark mode has been enabled successfully!","success")
-     
-      
       
     }
     else{
@@ -55,6 +56,7 @@ function App(){
       document.body.style.backgroundColor = "white";
       document.body.style.color = "black";
       showAlert("light mode has been enabled successfully!", "success")
+      document.title="light mode"
    
      
     }
@@ -74,8 +76,8 @@ function App(){
     {/* <About firstTextHeading="Functionality of TextUtils" /> */}
     <Routes>
     
-    <Route exact path='/' element={<TextForm showAlert={showAlert}/>} />
-    <Route exact path='/about' element = {<About />} />     
+    <Route exact path='/' element={<TextForm showAlert={showAlert} heading="Enter your text for manipulation."/>} />
+    <Route exact path='/about' element = {<About mode={mode}  />} />     
     <Route exact path='/contact' element = {<Contact/>} />
     </Routes>
 </div>

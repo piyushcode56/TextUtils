@@ -35,77 +35,19 @@
 }
 
 
-.developer-name{
-  margin-left: 70rem;
-  text-decoration: none;
-  color: black;
 
-}
-.developer-name:hover{
-  color: white;
-}
-
-.form{
-  justify-content: center;
-  text-align: center;
-  /* margin-left: 45rem; */
-  /* margin-top: 10rem; */
-  
-  
-  
-  
-}
 .contact-form{
-  background-image: url('https://cdn.wallpapersafari.com/19/37/movi5k.jpg');
-  width: 50rem;
-  margin-left: 30rem;
-  margin-top: 5rem;
-  box-shadow: 10px 10px 20px black;
-
-
+  width: 25rem;
+  background-image: url('https://images.unsplash.com/photo-1530103043960-ef38714abb15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFlc3RoZXRpY3xlbnwwfHwwfHw%3D&w=1000&q=80');
+  box-shadow: 5px 5px  10px black;
 }
 
-.contact-form textarea{
-  /* box-shadow: 3px 3px 7px 7px black; */
-  box-shadow: 5px 5px 10px black;
-  width: 24.7rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  border: none;
- 
 
-}
-.contact-form input{
- 
-  width: 24.7rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 5px 5px 10px black;
 
-}
 
-.submit-btn button{
-  width: 7rem;
-  padding: 0.7rem;
-  border-radius: 10px;
-  background-color: cyan;
-  color: black;
-  border: none;
-  transition: 0.7s ease;
- 
-}
-.contact-body{
-  
-  height: 100vh;
-  position: relative;
-}
-.submit-btn button:hover{
-  background-color: black;
-  color: white;
 
-  
-}
+
+
 .developer-info{
   margin-left: 80rem;
 }
